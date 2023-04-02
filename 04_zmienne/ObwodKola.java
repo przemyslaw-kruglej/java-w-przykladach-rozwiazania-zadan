@@ -6,7 +6,7 @@ public class ObwodKola {
     double obwod = 2 * PI * r;
 
     System.out.printf(
-        "Obwód koła o promieniu %.2f wynosi %.2f.%n",
+        "Obwód koła o promieniu %.2f wynosi %.2f.",
         r,
         obwod
     );

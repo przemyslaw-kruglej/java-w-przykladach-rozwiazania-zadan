@@ -8,7 +8,7 @@ public class PobieranieDanych {
     System.out.print("Podaj słowo: ");
     String slowo = pobierzSlowo();
 
-    System.out.printf("Podałeś liczbę %d oraz słowo %s%n", liczba, slowo);
+    System.out.printf("Podałeś liczbę %d oraz słowo %s", liczba, slowo);
   }
 
   public static int pobierzLiczbe() {

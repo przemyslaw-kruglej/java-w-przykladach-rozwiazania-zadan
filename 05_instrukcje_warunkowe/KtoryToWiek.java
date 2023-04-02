@@ -15,7 +15,7 @@ public class KtoryToWiek {
         wiek++;
       }
 
-      System.out.printf("Ten rok należy do %d wieku.%n", wiek);
+      System.out.printf("Ten rok należy do %d wieku.", wiek);
     }
   }
 

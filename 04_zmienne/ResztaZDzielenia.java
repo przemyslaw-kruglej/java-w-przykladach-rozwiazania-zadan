@@ -9,7 +9,7 @@ public class ResztaZDzielenia {
     int wynik = liczba % 7;
 
     System.out.printf(
-        "Reszta z dzielenia tej liczby przez 7 to %d.%n", wynik
+        "Reszta z dzielenia tej liczby przez 7 to %d.", wynik
     );
   }
 

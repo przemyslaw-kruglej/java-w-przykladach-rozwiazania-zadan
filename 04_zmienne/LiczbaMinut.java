@@ -8,7 +8,7 @@ public class LiczbaMinut {
     int liczbaMinut = liczbaGodzin * 60;
 
     System.out.printf(
-        "Ta liczba godzin składa się z %d minut.%n",
+        "Ta liczba godzin składa się z %d minut.",
         liczbaMinut
     );
   }

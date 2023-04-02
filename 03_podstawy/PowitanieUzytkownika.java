@@ -6,7 +6,7 @@ public class PowitanieUzytkownika {
 
     String imie = pobierzSlowo();
 
-    System.out.printf("Witaj %s%n", imie);
+    System.out.printf("Witaj %s", imie);
   }
 
   public static String pobierzSlowo() {

@@ -50,7 +50,7 @@ public class NazwaMiesiaca {
     }
 
     System.out.printf(
-        "Miesiąc o numerze %d to %s.%n",
+        "Miesiąc o numerze %d to %s.",
         numerMiesiaca,
         nazwaMiesiaca
     );

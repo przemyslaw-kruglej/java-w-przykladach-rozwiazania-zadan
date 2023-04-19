@@ -1,0 +1,4 @@
+To jest przykładowy plik tekstowy zawierający
+kilka
+linii
+tekstu.

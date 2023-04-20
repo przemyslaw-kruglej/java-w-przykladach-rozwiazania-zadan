@@ -1,8 +1,8 @@
-package zadanie54;
+package zadanie55;
 
-import static zadanie54.LiczeniePolFigur.policzPoleKola;
-import static zadanie54.LiczeniePolFigur.policzPoleKwadratu;
-import static zadanie54.LiczeniePolFigur.policzPoleProstokata;
+import static zadanie55.LiczeniePolFigur.policzPoleKola;
+import static zadanie55.LiczeniePolFigur.policzPoleKwadratu;
+import static zadanie55.LiczeniePolFigur.policzPoleProstokata;
 
 public class Main {
   public static void main(String[] args) {

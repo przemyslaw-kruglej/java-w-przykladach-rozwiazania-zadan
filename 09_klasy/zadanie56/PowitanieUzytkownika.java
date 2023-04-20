@@ -1,4 +1,4 @@
-package zadanie55;
+package zadanie56;
 
 import java.util.Scanner;
 

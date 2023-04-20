@@ -1,30 +1,22 @@
-package zadanie53.doPoprawy;
+package zadanie54.poprawione;
 
 import java.util.Arrays;
 
-public class Figura {
-  private String nazwa;
-  private Punkt[] wierzcholki;
+class Figura {
+  private final String nazwa;
+  private final Punkt[] wierzcholki;
 
   public Figura(String nazwa, Punkt[] wierzcholki) {
     this.nazwa = nazwa;
-    this.wierzcholki = wierzcholki;
+    this.wierzcholki = Arrays.copyOf(wierzcholki, wierzcholki.length);
   }
 
   public String getNazwa() {
     return nazwa;
   }
 
-  public void setNazwa(String nazwa) {
-    this.nazwa = nazwa;
-  }
-
   public Punkt[] getWierzcholki() {
-    return wierzcholki;
-  }
-
-  public void setWierzcholki(Punkt[] wierzcholki) {
-    this.wierzcholki = wierzcholki;
+    return Arrays.copyOf(wierzcholki, wierzcholki.length);
   }
 
   @Override

@@ -1,4 +1,4 @@
-package zadanie52;
+package zadanie53;
 
 import java.util.Objects;
 

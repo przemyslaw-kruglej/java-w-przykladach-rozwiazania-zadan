@@ -1,4 +1,4 @@
-package zadanie57;
+package zadanie58;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;

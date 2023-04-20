@@ -1,4 +1,4 @@
-package zadanie57;
+package zadanie58;
 
 public class GraczZagrywajacyPoprzedniZnakPrzeciwnika
     extends GraczPapierKamienNozyce {

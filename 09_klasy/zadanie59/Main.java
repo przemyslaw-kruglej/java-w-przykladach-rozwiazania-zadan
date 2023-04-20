@@ -2,14 +2,16 @@ package zadanie59;
 
 public class Main {
   public static void main(String[] args) {
-    if (args.length == 0) {
-      System.out.println(
-          "Brak argumentu - ścieżki do pliku."
-      );
-    } else {
-      System.out.println(
-          LiczenieZnakowWPliku.policzZnaki(args[0])
-      );
-    }
+    Para<String, Integer> para =
+        new Para<>("strona", 42);
+
+    Para<String, String> najlepsiPrzyjaciele =
+        Para.of("pies", "kot");
+
+    Para<Integer, String> innaPara = para.zamienMiejscami();
+
+    System.out.println(para);
+    System.out.println(najlepsiPrzyjaciele);
+    System.out.println(innaPara);
   }
 }

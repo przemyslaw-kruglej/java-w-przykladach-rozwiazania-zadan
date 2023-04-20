@@ -1,8 +1,11 @@
-package zadanie51;
+package zadanie57;
 
 import java.time.LocalDate;
 
-public record Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
+public record Osoba(
+    String imie, String nazwisko, LocalDate dataUrodzin
+) implements Comparable<Osoba> {
+
   public Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
     StringBuilder bledyWalidacji = new StringBuilder();
 
@@ -27,5 +30,20 @@ public record Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
     this.imie = imie;
     this.nazwisko = nazwisko;
     this.dataUrodzin = dataUrodzin;
+  }
+
+  @Override
+  public int compareTo(Osoba o) {
+    int wynik = dataUrodzin.compareTo(o.dataUrodzin);
+
+    if (wynik == 0) {
+      wynik = String.CASE_INSENSITIVE_ORDER.compare(nazwisko, o.nazwisko);
+
+      if (wynik == 0) {
+        return String.CASE_INSENSITIVE_ORDER.compare(imie, o.imie);
+      }
+    }
+
+    return wynik;
   }
 }

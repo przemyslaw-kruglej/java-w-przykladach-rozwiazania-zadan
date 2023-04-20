@@ -1,4 +1,4 @@
-package zadanie53.poprawione;
+package zadanie54.poprawione;
 
 public class Main {
   public static void main(String[] args) {

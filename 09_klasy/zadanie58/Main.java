@@ -1,17 +1,47 @@
 package zadanie58;
 
+import static zadanie58.WynikGry.*;
+import static zadanie58.Znak.*;
+
 public class Main {
   public static void main(String[] args) {
-    Para<String, Integer> para =
-        new Para<>("strona", 42);
+    symulujPapierKamienNozyce(
+        new GraczZawszeZagrywajacyLosowyZnak(),
+        new GraczZawszeZagrywajacyLosowyZnak(),
+        5
+    );
+  }
 
-    Para<String, String> najlepsiPrzyjaciele =
-        Para.of("pies", "kot");
+  public static void symulujPapierKamienNozyce(
+      GraczPapierKamienNozyce gracz1,
+      GraczPapierKamienNozyce gracz2,
+      int liczbaGier
+  ) {
+    for (int nrRundy = 1; nrRundy <= liczbaGier; nrRundy++) {
+      Znak znak1 = gracz1.graj();
+      Znak znak2 = gracz2.graj();
 
-    Para<Integer, String> innaPara = para.zamienMiejscami();
+      System.out.printf(
+          "Runda #%d: %s vs. %s%n", nrRundy, znak1, znak2
+      );
 
-    System.out.println(para);
-    System.out.println(najlepsiPrzyjaciele);
-    System.out.println(innaPara);
+      if (znak1 == znak2) {
+        gracz1.rezultatGry(REMIS, znak2);
+        gracz2.rezultatGry(REMIS, znak1);
+        System.out.println("Remis.");
+      } else if (
+          (znak1 == KAMIEN && znak2 == NOZYCE) ||
+          (znak1 == NOZYCE && znak2 == PAPIER) ||
+          (znak1 == PAPIER && znak2 == KAMIEN)
+      ) {
+        gracz1.rezultatGry(WYGRANA, znak2);
+        gracz2.rezultatGry(PRZEGRANA, znak1);
+        System.out.println("Wygrał pierwszy gracz.");
+      } else {
+        gracz1.rezultatGry(PRZEGRANA, znak2);
+        gracz2.rezultatGry(WYGRANA, znak1);
+        System.out.println("Wygrał drugi gracz.");
+      }
+    }
   }
 }

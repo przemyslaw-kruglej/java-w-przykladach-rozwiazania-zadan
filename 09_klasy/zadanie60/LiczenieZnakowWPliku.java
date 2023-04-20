@@ -1,4 +1,4 @@
-package zadanie59;
+package zadanie60;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

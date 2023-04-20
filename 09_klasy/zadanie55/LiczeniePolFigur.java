@@ -1,4 +1,4 @@
-package zadanie54;
+package zadanie55;
 
 public class LiczeniePolFigur {
   public static double policzPoleKola(double promien) {

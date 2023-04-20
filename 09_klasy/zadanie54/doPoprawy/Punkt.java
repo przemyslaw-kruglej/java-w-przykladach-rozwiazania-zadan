@@ -1,12 +1,7 @@
-package zadanie53.poprawione;
+package zadanie54.doPoprawy;
 
 public class Punkt {
-  public final int x, y;
-
-  public Punkt(int x, int y) {
-    this.x = x;
-    this.y = y;
-  }
+  public int x, y;
 
   @Override
   public String toString() {

@@ -6,7 +6,8 @@ import util.ZadanieAlgorytmiczneTestBase;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-public class WypiszDlugoscKazdegoSlowaTest extends ZadanieAlgorytmiczneTestBase {
+public class WypiszDlugoscKazdegoSlowaTest
+    extends ZadanieAlgorytmiczneTestBase {
 
   @Test
   public void kilkaZestawowZKrotkimiSlowami() {
@@ -42,9 +43,13 @@ public class WypiszDlugoscKazdegoSlowaTest extends ZadanieAlgorytmiczneTestBase 
 
   @Test
   public void maksymalnyZestaw() {
-    ustawDaneWejsciowe(Paths.get("11_algorytmy/zadanie64/zestaw_max_dane.txt"));
+    ustawDaneWejsciowe(
+        Paths.get("11_algorytmy/zadanie64/zestaw_max_dane.txt")
+    );
     przetworzDaneWejsciowe();
-    sprawdzWynik(Paths.get("11_algorytmy/zadanie64/zestaw_max_wynik.txt"));
+    sprawdzWynik(
+        Paths.get("11_algorytmy/zadanie64/zestaw_max_wynik.txt")
+    );
   }
 
   private void przetworzDaneWejsciowe() {

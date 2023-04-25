@@ -48,7 +48,7 @@ public class WypiszDlugoscKazdegoSlowaTest
     );
     przetworzDaneWejsciowe();
     sprawdzWynik(
-        Paths.get("11_algorytmy/zadanie64/zestaw_max_wynik.txt")
+        Paths.get("11_algorytmy/zadanie64/zestaw_max_wyniki.txt")
     );
   }
 

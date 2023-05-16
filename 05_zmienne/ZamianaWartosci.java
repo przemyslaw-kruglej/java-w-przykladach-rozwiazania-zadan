@@ -12,7 +12,9 @@ public class ZamianaWartosci {
     pierwsza = druga;
     druga = tmp;
 
-    System.out.printf("Podałeś liczby %d oraz %d.", pierwsza, druga);
+    System.out.printf(
+        "Podałeś liczby %d oraz %d.", pierwsza, druga
+    );
   }
 
   public static int pobierzLiczbe() {

@@ -22,12 +22,10 @@ public class NazwaMiesiacaWyrazenieSwitch {
       default -> "nieprawidłowy miesiąc";
     };
 
-    System.out.println(
-        String.format(
-            "Miesiąc o numerze %d to %s.",
-            numerMiesiaca,
-            nazwaMiesiaca
-        )
+    System.out.printf(
+        "Miesiąc o numerze %d to %s.",
+        numerMiesiaca,
+        nazwaMiesiaca
     );
   }
 

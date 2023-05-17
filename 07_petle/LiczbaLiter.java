@@ -12,7 +12,9 @@ public class LiczbaLiter {
           "Liczba znaków w tym słowie to " + slowo.length()
       );
 
-      System.out.print("Czy chcesz podać kolejne słowo (tak/nie)? ");
+      System.out.print(
+          "Czy chcesz podać kolejne słowo (tak/nie)? "
+      );
       czyKolejneSlowo = pobierzSlowo();
     } while ("tak".equals(czyKolejneSlowo));
   }

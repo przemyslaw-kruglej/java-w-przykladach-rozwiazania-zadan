@@ -31,7 +31,7 @@ public class ObracanieDwuwymiarowejTablicy {
 
     // wypisywanie tablicy dwuwymiarowej obróconej o 180 stopni
     for (int rzad = liczbaRzedow - 1; rzad >= 0; rzad--) {
-      for (int kolumna = liczbaKolumn - 1; kolumna >= 0 ; kolumna--) {
+      for (int kolumna = liczbaKolumn - 1; kolumna >= 0; kolumna--) {
         System.out.print(tablica[rzad][kolumna]);
       }
       System.out.println();
@@ -40,7 +40,7 @@ public class ObracanieDwuwymiarowejTablicy {
     System.out.println();
 
     // wypisywanie tablicy dwuwymiarowej obróconej o 90 stopni w lewo
-    for (int kolumna = liczbaKolumn - 1; kolumna >= 0 ; kolumna--) {
+    for (int kolumna = liczbaKolumn - 1; kolumna >= 0; kolumna--) {
       for (int rzad = 0; rzad < liczbaRzedow; rzad++) {
         System.out.print(tablica[rzad][kolumna]);
       }

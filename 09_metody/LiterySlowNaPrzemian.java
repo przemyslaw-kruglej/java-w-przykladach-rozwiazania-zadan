@@ -21,15 +21,16 @@ public class LiterySlowNaPrzemian {
 
   public static String ustawZnakiNaPrzemian(String s1, String s2) {
     StringBuilder stringBuilder = new StringBuilder();
-    //int dlugoscKrotszegoStringa = Math.min(s1.length(), s2.length());
     int dlugoscKrotszegoStringa =
-        s1.length() < s2.length() ? s1.length() : s2.length();
+        Math.min(s1.length(), s2.length());
     String dluzszyString = s1.length() > s2.length() ? s1 : s2;
 
     for (int i = 0; i < dlugoscKrotszegoStringa; i++) {
       stringBuilder.append(s1.charAt(i)).append(s2.charAt(i));
     }
-    stringBuilder.append(dluzszyString.substring(dlugoscKrotszegoStringa));
+    stringBuilder.append(
+        dluzszyString.substring(dlugoscKrotszegoStringa)
+    );
 
     return stringBuilder.toString();
   }

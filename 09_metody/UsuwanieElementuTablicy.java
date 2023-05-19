@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class LaczenieTablicDrugaWersja {
+public class UsuwanieElementuTablicy {
   public static void main(String[] args) {
     System.out.println(
         Arrays.toString(usunElement(new int[] { 1 }, 0))
@@ -15,9 +15,7 @@ public class LaczenieTablicDrugaWersja {
 
   public static int[] usunElement(int[] liczby, int indeks) {
     if (indeks < 0 || indeks >= liczby.length) {
-      throw new IllegalArgumentException(
-          "Indeks wykracza poza zakres tablicy."
-      );
+      return Arrays.copyOf(liczby, liczby.length);
     }
 
     int[] rezultat = new int[liczby.length - 1];

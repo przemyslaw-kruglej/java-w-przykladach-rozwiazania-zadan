@@ -2,7 +2,9 @@ package zadanie52;
 
 import java.time.LocalDate;
 
-public record Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
+public record Osoba(
+    String imie, String nazwisko, LocalDate dataUrodzin
+) {
   public Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
     StringBuilder bledyWalidacji = new StringBuilder();
 
@@ -15,7 +17,9 @@ public record Osoba(String imie, String nazwisko, LocalDate dataUrodzin) {
     if (dataUrodzin == null) {
       bledyWalidacji.append("Data urodzin jest wymagana.\n");
     } else if (dataUrodzin.isAfter(LocalDate.now())) {
-      bledyWalidacji.append("Data urodzin nie może być w przyszłości.\n");
+      bledyWalidacji.append(
+          "Data urodzin nie może być w przyszłości.\n"
+      );
     }
 
     if (!bledyWalidacji.isEmpty()) {

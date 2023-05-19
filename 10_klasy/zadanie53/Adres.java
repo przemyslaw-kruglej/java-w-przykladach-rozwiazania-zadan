@@ -12,14 +12,20 @@ public record Adres(
   public Adres {
     Objects.requireNonNull(ulica, "Ulica jest wymagana.");
     Objects.requireNonNull(numerDomu, "Numer domu jest wymagany.");
-    Objects.requireNonNull(kodPocztowy, "Kod pocztowy jest wymagany.");
-    Objects.requireNonNull(miejscowosc, "Miejscowosc jest wymagana.");
+    Objects.requireNonNull(
+        kodPocztowy, "Kod pocztowy jest wymagany."
+    );
+    Objects.requireNonNull(
+        miejscowosc, "Miejscowosc jest wymagana."
+    );
   }
 }
 
 record Ulica(String wartosc) {
   public Ulica {
-    Objects.requireNonNull(wartosc, "Wartość dla ulicy jest wymagana.");
+    Objects.requireNonNull(
+        wartosc, "Wartość dla ulicy jest wymagana."
+    );
   }
 }
 

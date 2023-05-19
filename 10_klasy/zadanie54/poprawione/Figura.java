@@ -8,7 +8,9 @@ class Figura {
 
   public Figura(String nazwa, Punkt[] wierzcholki) {
     this.nazwa = nazwa;
-    this.wierzcholki = Arrays.copyOf(wierzcholki, wierzcholki.length);
+    this.wierzcholki = Arrays.copyOf(
+        wierzcholki, wierzcholki.length
+    );
   }
 
   public String getNazwa() {

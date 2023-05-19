@@ -37,10 +37,14 @@ public record Osoba(
     int wynik = dataUrodzin.compareTo(o.dataUrodzin);
 
     if (wynik == 0) {
-      wynik = String.CASE_INSENSITIVE_ORDER.compare(nazwisko, o.nazwisko);
+      wynik = String.CASE_INSENSITIVE_ORDER.compare(
+          nazwisko, o.nazwisko
+      );
 
       if (wynik == 0) {
-        return String.CASE_INSENSITIVE_ORDER.compare(imie, o.imie);
+        return String.CASE_INSENSITIVE_ORDER.compare(
+            imie, o.imie
+        );
       }
     }
 

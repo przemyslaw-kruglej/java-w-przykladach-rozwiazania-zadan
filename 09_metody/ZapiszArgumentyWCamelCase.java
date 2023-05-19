@@ -16,7 +16,9 @@ public class ZapiszArgumentyWCamelCase {
       if (sb.isEmpty()) {
         sb.append(strBezBialychZnakow.toLowerCase());
       } else {
-        sb.append(Character.toUpperCase(strBezBialychZnakow.charAt(0)));
+        sb.append(
+            Character.toUpperCase(strBezBialychZnakow.charAt(0))
+        );
         sb.append(strBezBialychZnakow.substring(1).toLowerCase());
       }
     }

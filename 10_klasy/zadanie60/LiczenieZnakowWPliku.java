@@ -21,7 +21,9 @@ public class LiczenieZnakowWPliku {
 
       return liczbaZnakow;
     } catch(FileNotFoundException e) {
-      throw new IllegalArgumentException("Podany plik nie istnieje.");
+      throw new IllegalArgumentException(
+          "Podany plik nie istnieje."
+      );
     } catch (IOException e) {
       throw new RuntimeException(
           "Wystąpił błąd podczas odczytywania pliku.", e

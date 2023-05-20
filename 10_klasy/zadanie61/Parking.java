@@ -14,7 +14,9 @@ public class Parking {
 
   public List<Samochod> znajdzSamochodyPoMarce(String marka) {
     return samochody.stream()
-        .filter(samochod -> samochod.marka().equalsIgnoreCase(marka))
+        .filter(
+            samochod -> samochod.marka().equalsIgnoreCase(marka)
+        )
         .toList();
   }
 

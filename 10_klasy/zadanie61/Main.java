@@ -18,6 +18,7 @@ public class Main {
 
     Optional<Samochod> najszybszy =
         parking.znajdzNajszybszySamochod();
+
     if (najszybszy.isPresent()) {
       System.out.println(
           "Najszybszy samochód: " + najszybszy.get()

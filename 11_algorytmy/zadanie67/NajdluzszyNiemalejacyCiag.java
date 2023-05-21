@@ -27,8 +27,9 @@ public class NajdluzszyNiemalejacyCiag {
         if (poprzedniaLiczba <= aktualnaLiczba) {
           aktualnaDlugosc++;
         } else {
-          znalezionaNajwiekszaDlugosc =
-              Math.max(znalezionaNajwiekszaDlugosc, aktualnaDlugosc);
+          znalezionaNajwiekszaDlugosc = Math.max(
+              znalezionaNajwiekszaDlugosc, aktualnaDlugosc
+          );
           aktualnaDlugosc = 1;
         }
 

@@ -2,13 +2,11 @@ package zadanie64;
 
 import org.junit.jupiter.api.Test;
 import util.ZadanieAlgorytmiczneTestBase;
-
 import java.io.IOException;
 import java.nio.file.Paths;
 
 public class WypiszDlugoscKazdegoSlowaTest
     extends ZadanieAlgorytmiczneTestBase {
-
   @Test
   public void kilkaZestawowZKrotkimiSlowami() {
     ustawDaneWejsciowe("""

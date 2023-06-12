@@ -42,7 +42,7 @@ public record Osoba(
       );
 
       if (wynik == 0) {
-        return String.CASE_INSENSITIVE_ORDER.compare(
+        wynik = String.CASE_INSENSITIVE_ORDER.compare(
             imie, o.imie
         );
       }

@@ -7,16 +7,14 @@ public class Parking {
 
   public void dodajSamochod(Samochod samochod) {
     Objects.requireNonNull(
-        samochod, "Samochód nie może być nullum."
+        samochod, "Samochód nie może być nullem."
     );
     samochody.add(samochod);
   }
 
   public List<Samochod> znajdzSamochodyPoMarce(String marka) {
     return samochody.stream()
-        .filter(
-            samochod -> samochod.marka().equalsIgnoreCase(marka)
-        )
+        .filter(samochod -> samochod.marka().equalsIgnoreCase(marka))
         .toList();
   }
 

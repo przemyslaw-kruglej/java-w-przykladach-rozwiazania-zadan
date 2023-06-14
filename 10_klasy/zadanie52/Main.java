@@ -10,6 +10,8 @@ public class Main {
     Osoba osoba2 = new Osoba(
         "Anna", "Nowak", LocalDate.of(1985, 4, 5)
     );
-    Osoba osoba3 = new Osoba(null, " ", LocalDate.of(2023, 4, 13));
+    Osoba osoba3 = new Osoba(
+        null, " ", LocalDate.of(2023, 4, 13)
+    );
   }
 }

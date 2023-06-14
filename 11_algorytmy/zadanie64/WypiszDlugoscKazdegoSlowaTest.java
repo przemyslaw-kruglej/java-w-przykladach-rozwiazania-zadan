@@ -33,9 +33,7 @@ public class WypiszDlugoscKazdegoSlowaTest
             "a".repeat(1000)
         )
     );
-
     przetworzDaneWejsciowe();
-
     sprawdzWynik("1000");
   }
 

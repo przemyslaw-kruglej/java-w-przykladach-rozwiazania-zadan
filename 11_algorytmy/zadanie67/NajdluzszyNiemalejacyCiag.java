@@ -37,8 +37,8 @@ public class NajdluzszyNiemalejacyCiag {
       }
 
       bw.write(String.valueOf(
-          Math.max(znalezionaNajwiekszaDlugosc, aktualnaDlugosc))
-      );
+          Math.max(znalezionaNajwiekszaDlugosc, aktualnaDlugosc)
+      ));
       bw.newLine();
     }
 

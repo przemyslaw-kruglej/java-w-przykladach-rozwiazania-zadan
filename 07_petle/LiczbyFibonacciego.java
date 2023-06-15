@@ -1,9 +1,8 @@
 public class LiczbyFibonacciego {
   public static void main(String[] args) {
-    // zmienne pomocnicze przechowujące wartości
-    // dwóch poprzednich liczb Fibonacciego
-    // inicjalizujemy je wartościami pierwszej
-    // i drugiej liczby Fibonacciego
+    // zmienne pomocnicze przechowujące wartości dwóch
+    // poprzednich liczb Fibonacciego inicjalizujemy je
+    // wartościami pierwszej i drugiej liczby Fibonacciego
     int fibDlaNMinus2 = 0;
     int fibDlaNMinus1 = 1;
     int maksymalneN = 20;
